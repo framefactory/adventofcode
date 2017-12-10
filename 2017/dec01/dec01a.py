@@ -3,13 +3,9 @@
 def main():
     input_file = open("dec01a_input.txt")
     data = input_file.read()
+    numbers = [ int(part) for part in data if part.isdigit() ] 
+    size = len(numbers)
 
-    numbers = []
-    for c in data:
-        if c.isdigit():
-            numbers.append(int(c))
-
-    count = len(numbers)
     finished = False
     pos = 0
     sum = 0
@@ -20,7 +16,7 @@ def main():
 
         while True:
             pos += 1
-            if pos >= count:
+            if pos >= size:
                 pos = 0
                 finished = True
 

@@ -3,14 +3,8 @@
 def main():
     input_file = open("dec02a_input.txt")
     data = input_file.read()
-    lines = data.split("\n")
-    rows = []
-
-    for line in lines:
-        row = [ int(chunk) for chunk in line.split() if chunk.isdigit() ]
-        if len(row) > 0:
-            row.sort(reverse=True)
-            rows.append(row)
+    rows = [ sorted([ int(chunk) for chunk in line.split() if chunk.isdigit() ], reverse=True)
+        for line in data.strip().split("\n") if line ]
 
     sum = 0
     for row in rows:
