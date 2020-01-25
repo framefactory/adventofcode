@@ -56,6 +56,18 @@ const vector<int> to_int(const vector<string>& strings)
     return numbers;
 }
 
+const vector<int64_t> to_bigint(const vector<string>& strings)
+{
+    vector<int64_t> numbers;
+    numbers.reserve(strings.size());
+
+    for (auto s : strings) {
+        numbers.push_back(stoi(s));
+    }
+
+    return numbers;
+}
+
 const vector<double> to_float(const vector<string>& strings)
 {
     vector<double> numbers;
