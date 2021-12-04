@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# https://adventofcode.com/2021/day/1
+# https://adventofcode.com/2021/day/2
 
 def main():
     with open("input.txt") as input_file:
