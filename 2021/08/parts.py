@@ -33,7 +33,7 @@ def solve(digits):
     res[8] = da[9]
     da_235 = [da[3], da[4], da[5]]
     da_069 = [da[6], da[7], da[8]]
-    res[3] = first_match(da_235, lambda e: num_shared(e, res[1]) == 2)
+    res[3] = first_match(da_235, lambda e: is_contained(res[1], e))
     res[6] = first_match(da_069, lambda e: not is_contained(res[1], e))
     res[5] = first_match(da_235, lambda e: e != res[3] and is_contained(e, res[6]))
     res[2] = first_match(da_235, lambda e: e != res[3] and e != res[5])
@@ -56,12 +56,16 @@ def first_match(list, func):
     for e in list:
         if func(e):
             return e 
+
 def is_equal(da, db):
     return len(da) == len(db) and num_shared(da, db) == len(da)
+
 def is_contained(da, db):
     return num_shared(da, db) == len(da)
+
 def shared(da, db):
     return "".join([ sa for sa in da if sa in db ])
+
 def num_shared(da, db):
     return len(shared(da, db))
 
