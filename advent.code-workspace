@@ -1,8 +1,37 @@
 {
 	"folders": [
 		{
+			"name": "Project",
 			"path": "."
+		},
+		{
+			"name": "2022/01",
+			"path": "2022/01"
+		},
+		{
+			"name": "2022/02",
+			"path": "2022/02"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"editor.inlayHints.enabled": "offUnlessPressed",
+		"editor.semanticTokenColorCustomizations": {
+			"enabled": true,
+			"rules": {
+				"variable": "#afdbe3",
+				"variable.mutable": "#4cdbf4",
+				"*.mutable": {
+					"underline": false,
+				}
+			}
+		},
+		"workbench.colorCustomizations": {
+			"[Default Dark+]": {
+				"editorInlayHint.foreground": "#868686",
+				"editorInlayHint.background": "#00000000",
+				//"editorInlayHint.typeForeground": "#486148",
+				//"editorInlayHint.parameterForeground": "#486148",
+				}
+		}
+	}
 }
