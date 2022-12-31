@@ -15,6 +15,10 @@ import "./09/puzzle.js";
 import "./10/puzzle.js";
 import "./11/puzzle.js";
 import "./12/puzzle.js";
+import "./13/puzzle.js";
+import "./14/puzzle.js";
+import "./15/puzzle.js";
+import "./16/puzzle.js";
 
 
 @customElement("aoc-application")
@@ -51,6 +55,10 @@ export class Application extends LitElement
             <aoc-day-10></aoc-day-10>
             <aoc-day-11></aoc-day-11>
             <aoc-day-12></aoc-day-12>
+            <aoc-day-13></aoc-day-13>
+            <aoc-day-14></aoc-day-14>
+            <aoc-day-15></aoc-day-15>
+            <aoc-day-16></aoc-day-16>
         `;
     }
 

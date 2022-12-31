@@ -58,8 +58,9 @@ export class Day10 extends Puzzle
 
         //// PART 2
 
+        console.log("DAY 10 / PART 2");
         crt.forEach(line => {
-            console.log(line.join(""));
+            console.log(line.map(c => c.repeat(2)).join(""));
         })
 
         this.resultPart2 = `BUCACBUZ`;
