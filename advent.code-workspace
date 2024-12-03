@@ -4,14 +4,6 @@
 			"name": "Project",
 			"path": "."
 		},
-		{
-			"name": "2022/01",
-			"path": "2022/01"
-		},
-		{
-			"name": "2022/02",
-			"path": "2022/02"
-		}
 	],
 	"settings": {
 		"editor.inlayHints.enabled": "offUnlessPressed",
