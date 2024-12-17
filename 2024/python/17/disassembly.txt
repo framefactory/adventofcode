@@ -1,0 +1,13 @@
+0 ADV A = A // 2 ** 1
+5 OUT A % 8
+3 JNZ A != 0 goto 0
+
+
+2 BST B = A % 8
+1 BXL B = B xor 5
+7 CDV C = A >> B
+4 BXC B = B xor C
+1 BXL B = B xor 6
+0 ADV A = A >> 8
+5 OUT B % 8
+3 JNZ A != 0 goto 0
